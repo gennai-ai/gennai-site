@@ -12,7 +12,7 @@
  */
 
 window.GENNAI_GAMES = [
-  { slug: "ponpon-tile",            title: "ぽんぽんタイル",       ios: "https://apps.apple.com/jp/app/id6807742726", android: null },
+  { slug: "ponpon-tile",            title: "ぽんぽんタイル",       ios: "https://apps.apple.com/jp/app/id6807742726", android: "https://play.google.com/store/apps/details?id=ai.gennai.tilematch" },
   { slug: "mizumichi-tsunagi",      title: "みずみちつなぎ",       ios: null, android: null },
   { slug: "nakamahazure-jump",      title: "なかまはずれジャンプ", ios: null, android: null },
   { slug: "yajirushi-daidasshutsu", title: "矢印大脱出",           ios: null, android: null },
