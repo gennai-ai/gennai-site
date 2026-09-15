@@ -1,8 +1,8 @@
 # 公開の手順（GitHub Pages ＋ gennai.ai）
 
 ## 今の状態
-- ソース → GitHub `fmkpro1984gennai/gennai-site`（公開リポジトリ・main ブランチ直下をそのまま配信）
-- 配信 → GitHub Pages。`https://fmkpro1984gennai.github.io/gennai-site/`
+- ソース → GitHub `gennai-ai/gennai-site`（組織 gennai-ai 所有・公開リポジトリ・main ブランチ直下をそのまま配信。2026-09-14 に個人アカウント fmkpro1984gennai から移転。旧 URL は GitHub が自動転送）
+- 配信 → GitHub Pages。`https://gennai-ai.github.io/gennai-site/`（→ gennai.ai へ 301。旧 fmkpro1984gennai.github.io 側は移転後 404）
 - 更新 → このフォルダを直して `git push` するだけ（1〜2 分で反映）。ビルド工程は無い
 
 ## gennai.ai で開けるようにする（GoDaddy の DNS 画面で 1 回だけ）
@@ -21,7 +21,9 @@ GoDaddy → マイプロダクト → gennai.ai → DNS → 「DNS レコード�
 | A | @ | 185.199.109.153 | 600 |
 | A | @ | 185.199.110.153 | 600 |
 | A | @ | 185.199.111.153 | 600 |
-| CNAME | www | fmkpro1984gennai.github.io | 600 |
+| CNAME | www | gennai-ai.github.io | 600 |
+
+※ 2026-09-14 の組織移転時点で GoDaddy の www CNAME はまだ旧値 `fmkpro1984gennai.github.io` のまま（www は 301 で gennai.ai に届いており実害なし）。GoDaddy を触る機会があれば `gennai-ai.github.io` に直す。
 
 値の出典 → GitHub Docs「Managing a custom domain for your GitHub Pages site」（docs.github.com/pages）。末尾のドットは GoDaddy 側では不要。
 
@@ -34,7 +36,7 @@ GoDaddy → マイプロダクト → gennai.ai → DNS → 「DNS レコード�
 ## ストア申請に使う URL（gennai.ai が通った後の最終形）
 - プライバシーポリシー → `https://gennai.ai/privacy.html`
 - サポート URL（App Store） → `https://gennai.ai/#contact`
-- gennai.ai がまだなら暫定で `https://fmkpro1984gennai.github.io/gennai-site/privacy.html`（ログイン不要の公開ページなので Google Play の要件は満たす）
+- gennai.ai がまだなら暫定で `https://gennai-ai.github.io/gennai-site/privacy.html`（ログイン不要の公開ページなので Google Play の要件は満たす）
 
 ## 注意
 - `dist/` は見た目確認用の生成物で git に入れていない（`.gitignore`）
