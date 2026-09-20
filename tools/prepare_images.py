@@ -4,7 +4,7 @@ import os
 from PIL import Image
 
 SRC = r"C:\Users\fmkpr\OneDrive\Desktop\Work\OUTBOX"
-DST = r"E:\service_gennai_site\assets\img"
+DST = r"E:\service\gennai_web\assets\img"
 
 SLUGS = ["ponpon-tile", "mizumichi-tsunagi", "nakamahazure-jump",
          "yajirushi-daidasshutsu", "quiz-tobiishi", "irowake-labo",
