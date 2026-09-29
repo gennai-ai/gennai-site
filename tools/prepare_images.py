@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""OUTBOX の原本から、サイト用の画像を生成する（原本は読むだけ）。"""
+"""E:\\game_ryousan の確定物（games/<slug>/<部位>/final/）から、サイト用の画像を生成する（原本は読むだけ）。"""
 import os
 from PIL import Image
 
-SRC = r"C:\Users\fmkpr\OneDrive\Desktop\Work\OUTBOX"
+SRC = r"E:\game_ryousan\games"
 DST = r"E:\service\gennai_web\assets\img"
 
 SLUGS = ["ponpon-tile", "mizumichi-tsunagi", "nakamahazure-jump",
@@ -14,9 +14,9 @@ report = []
 
 for slug in SLUGS:
     if slug == "ponpon-tile":
-        icon_src = os.path.join(SRC, "ponpon-tile-icon", "ponpon-tile_icon_1024_appstore.png")
+        icon_src = os.path.join(SRC, "ponpon-tile", "icon", "final", "ponpon-tile_icon_1024_appstore.png")
     else:
-        icon_src = os.path.join(SRC, slug + "-icon", "final", "icon_1024_appstore.png")
+        icon_src = os.path.join(SRC, slug, "icon", "final", "icon_1024_appstore.png")
     im = Image.open(icon_src)
     report.append(("icon-src", slug, im.size, im.mode))
     im = im.convert("RGB")
@@ -24,7 +24,7 @@ for slug in SLUGS:
         out = os.path.join(DST, "icons", "%s-%d.png" % (slug, px))
         im.resize((px, px), Image.LANCZOS).save(out, "PNG", optimize=True)
 
-    feat_src = os.path.join(SRC, slug + "-store", "googleplay", "feature_graphic_1024x500.png")
+    feat_src = os.path.join(SRC, slug, "store", "final", "feature_graphic_1024x500.png")
     fi = Image.open(feat_src)
     report.append(("feature-src", slug, fi.size, fi.mode))
     fi = fi.convert("RGB")
@@ -32,7 +32,7 @@ for slug in SLUGS:
     fi.save(out, "JPEG", quality=85, optimize=True, progressive=True)
 
 for i in range(1, 5):
-    s = os.path.join(SRC, "ponpon-tile-store", "googleplay", "v2", "export-final", "gp", "gp_%d.png" % i)
+    s = os.path.join(SRC, "ponpon-tile", "store", "final", "screenshots", "gp", "gp_%d.png" % i)
     im = Image.open(s)
     report.append(("shot-src", "gp_%d" % i, im.size, im.mode))
     im = im.convert("RGB")
