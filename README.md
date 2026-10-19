@@ -7,7 +7,10 @@ GENNAI AI（提供者 Sherpal, LLC）が配信するスマートフォン向け�
 
 ```
 index.html                トップ（ヒーロー／ゲーム一覧／会社情報／お問い合わせ／フッター）
-privacy.html              プライバシーポリシー
+privacy.html              プライバシーポリシー（Gummy Munch 以外の 8 本の共通版）
+terms.html                Gummy Munch の利用規約（アプリが参照している既存の URL）
+gummy-munch/privacy.html  Gummy Munch 専用のプライバシーポリシー
+gummy-munch/delete-account.html  Gummy Munch のアカウント・データ削除の依頼方法
 assets/css/site.css       全ページ共通のスタイル（色・字体のトークンはここの :root）
 assets/js/games.js        ストア URL の設定（後述）
 assets/img/icons/         各ゲームのアイコン（256px と 128px）
@@ -50,6 +53,19 @@ JavaScript が無効な環境では、HTML に静的に書いてある「近日�
 （見た目の統一のため、原本のインライン CSS は `assets/css/site.css` の `.doc` 以下の規則に置き換えてある）。
 
 原本を更新したら、`<main>` の中身をこちらへ再コピーする。原本側だけ直してサイトを放置しない。
+
+例外として、`doc-head` の直後にある「Gummy Munch には本ポリシーは適用されません」の囲みと、
+2026-10-19 の最終改定日はサイト側だけで足したもので、原本には無い。再コピーするときはこの囲みを消さずに残す
+（原本の「ログインなし・サーバー送信なし・ランキングとクラウドセーブなし」は Gummy Munch に当てはまらず、
+課金も販売開始時の取扱いを専用ポリシー側に書いているため）。
+
+### Gummy Munch の文書
+
+Gummy Munch はゲストアカウント・クラウド保存・ランキング等でサーバーを使うため、上の共通版とは別の文書を持つ。
+`gummy-munch/privacy.html`・`gummy-munch/delete-account.html`・`terms.html` の 3 つは
+このサイトで直接書いた文書で、外部の原本（SSOT）は無い。アプリの機能（Google 連携・課金・広告・通知など）を
+有効にしたり変えたりしたら、先にこの 3 つを実態に合わせて直す。
+`terms.html` だけルート直下にあるのは、アプリがすでにこの URL を参照しているため。
 
 ## 見た目の確認
 

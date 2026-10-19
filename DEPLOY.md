@@ -36,7 +36,8 @@ GoDaddy → マイプロダクト → gennai.ai → DNS → 「DNS レコード�
 ## ストア申請に使う URL（gennai.ai が通った後の最終形）
 - プライバシーポリシー → `https://gennai.ai/privacy.html`
 - サポート URL（App Store） → `https://gennai.ai/#contact`
-- gennai.ai がまだなら暫定で `https://gennai-ai.github.io/gennai-site/privacy.html`（ログイン不要の公開ページなので Google Play の要件は満たす）
+- Gummy Munch だけは別 → プライバシーポリシー `https://gennai.ai/gummy-munch/privacy.html`／利用規約 `https://gennai.ai/terms.html`／アカウント削除（Google Play の「アカウント削除の URL」） `https://gennai.ai/gummy-munch/delete-account.html`
+- gennai.ai がまだなら暫定で `https://gennai-ai.github.io/gennai-site/privacy.html`（ログイン不要の公開ページなので Google Play の要件は満たす）。暫定ホストでもパスは同じで、Gummy Munch は `.../gummy-munch/privacy.html`・`.../terms.html`・`.../gummy-munch/delete-account.html` を指定する
 
 ## 注意
 - `dist/` は見た目確認用の生成物で git に入れていない（`.gitignore`）
