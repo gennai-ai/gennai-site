@@ -14,7 +14,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/site.css">
 <style>
-.review-note{background:#fff176; color:inherit; padding:0 .15em;}
 .lang-jump{margin:0 0 28px; font-size:14px;}
 </style>
 </head>
@@ -38,7 +37,7 @@
     <h1>Gummy Munch プライバシーポリシー</h1>
     <p class="dateline">
       <span><b>制定日</b>　2026年10月19日</span>
-      <span><b>最終改定日</b>　2026年●月●日</span>
+      <span><b>最終改定日</b>　2026年10月21日</span>
     </p>
   </div>
 
@@ -86,7 +85,7 @@
 
   <h3>(4) Google アカウントとの連携に関する情報（任意）</h3>
 
-  <p>Google アカウントとの連携は任意の機能で、お使いの本アプリの版で提供している場合に限り利用できます。連携を選んだ利用者について、Google から受け取るアカウントの識別子、メールアドレス、および名前やプロフィール画像の URL などのプロフィール情報を、アカウントの連携と引き継ぎのために、認証の仕組みの中で保存・処理します<mark class="review-note">〔しょうさんに確認: Google に求める情報の範囲（標準は識別子・メールアドレス・基本プロフィール）〕</mark>。本アプリの画面にメールアドレスを表示することはありません。連携を選ばない場合、これらの情報は取得しません。</p>
+  <p>Google アカウントとの連携は任意の機能で、お使いの本アプリの版で提供している場合に限り利用できます。連携を選んだ利用者について、Google から受け取るアカウントの識別子、メールアドレス、および名前やプロフィール画像の URL などのプロフィール情報を、アカウントの連携と引き継ぎのために、認証の仕組みの中で保存・処理します。本アプリの画面にメールアドレスを表示することはありません。連携を選ばない場合、これらの情報は取得しません。</p>
 
   <h3>(5) 購入に関する情報</h3>
 
@@ -97,7 +96,7 @@
     <li>購入を検証するための情報（Google Play の購入トークン、App Store の取引 ID など）と、ストアによる検証の結果（支払いの確認待ち、取消し、返金の有無を含みます。）</li>
   </ul>
 
-  <p>Google Play での購入の場合、当社のサーバーは、商品を付与した後、Google Play で購入の状態を確認したうえで購入の処理を完了させる手続きを行います。この手続きを完了させるため、また一時的な障害の際に再試行するため、購入を検証するための情報を暗号化して一時的に保存し、手続きが完了すると削除して、取引に関する必要最小限の記録を保存します<mark class="review-note">〔しょうさんに確認: サーバー側の実装がこのとおりか〕</mark>。</p>
+  <p>Google Play での購入の場合、当社のサーバーは、商品を付与した後、Google Play で購入の状態を確認したうえで購入の処理を完了させる手続きを行います。この手続きを完了させるため、また一時的な障害の際に再試行するため、購入を検証するための情報を暗号化して一時的に保存し、手続きが完了すると削除して、取引に関する必要最小限の記録を保存します。</p>
 
   <p>クレジットカード番号その他の決済手段の情報、Apple ID や Google アカウントのパスワードはストアが取り扱い、当社が取得することはありません。</p>
 
@@ -124,7 +123,7 @@
     <li>お問い合わせや削除のご依頼をいただいた場合の、メールアドレスおよびその内容（公開 ID、プレイヤー ID、サポートコード、取引の番号など、利用者がお知らせくださった情報を含みます。）</li>
   </ul>
 
-  <p>本アプリは、GPS による精密な位置情報、連絡先、写真、カメラ、マイク、通話履歴にはアクセスしません。当社は、利用状況を分析するためのソフトウェア（アナリティクスの SDK）および異常終了を記録するためのソフトウェア（クラッシュレポートの SDK）を本アプリに組み込んでいません<mark class="review-note">〔しょうさんに確認: Unity の設定の「エンジン診断」が有効のまま（ProjectSettings/UnityConnectSettings.asset の m_EngineDiagnosticsEnabled: 1）。製品のビルドで Unity Technologies に情報が送られるかを確かめ、送られるなら止めるかこの文を直す〕</mark>。</p>
+  <p>本アプリは、GPS による精密な位置情報、連絡先、写真、カメラ、マイク、通話履歴にはアクセスしません。当社は、利用状況を分析するためのソフトウェア（アナリティクスの SDK）および異常終了を記録するためのソフトウェア（クラッシュレポートの SDK）を本アプリに組み込んでいません。ただし、本アプリが使っているゲームエンジン（Unity）の提供者である Unity Technologies が、エンジンの動作に関する診断の情報を受け取る場合があり、その情報は同社のプライバシーポリシーに従って扱われます。</p>
 
   <h2><span class="num">第 2 条</span>端末内に保存される情報</h2>
 
@@ -225,7 +224,7 @@
 
   <h3>(3) 「記録を全部消す」との違い</h3>
 
-  <p>本アプリのメニューの「記録を全部消す」は、端末内の記録を消す機能です。クラウドバックアップには消した後の空の進みが送られますが、サーバーのアカウント、コイン・アイテムの残高、公開プロフィール、得点、フレンド、購入の記録は削除されません。サーバーのデータを消したい場合は、アカウント削除をご利用ください<mark class="review-note">〔しょうさんに確認: 利用規約 G-1 と同じ〕</mark>。</p>
+  <p>本アプリのメニューの「記録を全部消す」は、端末内の記録を消す機能です。クラウドバックアップには消した後の空の進みが送られますが、サーバーのアカウント、コイン・アイテムの残高、公開プロフィール、得点、フレンド、購入の記録は削除されません。サーバーのデータを消したい場合は、アカウント削除をご利用ください。</p>
 
   <h3>(4) ウェブサイトからの削除の依頼</h3>
 
@@ -237,7 +236,7 @@
   <p>削除の後も、次の情報は、それぞれの目的に必要な範囲で保存することがあります。</p>
 
   <ul>
-    <li>購入の取引に関する必要最小限の記録（法令上の義務への対応、不正の防止、監査、ストアの返金やお問い合わせへの対応のため）<mark class="review-note">〔しょうさんに確認: 保存期間〕</mark></li>
+    <li>購入の取引に関する必要最小限の記録（法令上の義務への対応、不正の防止、監査、ストアの返金やお問い合わせへの対応のため）</li>
     <li>不正利用の防止に必要な最小限の記録</li>
     <li>削除のご依頼とその対応の記録</li>
     <li>システムのバックアップに含まれ、ただちに消去できない情報（バックアップの保存期間が過ぎると消えます。）</li>
@@ -253,7 +252,7 @@
 
   <h2><span class="num">第 10 条</span>国外への情報の移転</h2>
 
-  <p>当社は米国に所在する法人であり、第5条に記載の事業者も日本国外に所在しています。そのため、取得した情報は日本国外（主に米国）のサーバーで保管・処理される場合があります<mark class="review-note">〔しょうさんに確認: Supabase のプロジェクトのリージョン（国）。日本の個人情報保護法の「外国にある第三者」の情報提供として、国名と制度の概要を書く必要がある〕</mark>。各国の個人情報の保護に関する制度は、日本の個人情報保護委員会が公表している資料をご覧ください。各事業者が講じている措置は、第5条に記載した各事業者のプライバシーポリシーに記載されています。EEA および英国からの移転については、第13条(5)をご覧ください。</p>
+  <p>当社は米国に所在する法人であり、第5条に記載の事業者も日本国外に所在しています。そのため、取得した情報は日本国外（主に米国）のサーバーで保管・処理される場合があります。各国の個人情報の保護に関する制度は、日本の個人情報保護委員会が公表している資料をご覧ください。各事業者が講じている措置は、第5条に記載した各事業者のプライバシーポリシーに記載されています。EEA および英国からの移転については、第13条(5)をご覧ください。</p>
 
   <h2><span class="num">第 11 条</span>広告について（Android 版）</h2>
 
@@ -273,7 +272,7 @@
 
   <h3>(2) EU と英国の代理人</h3>
 
-  <p>当社は EU および英国に事業所を持っていません。法令により EU または英国の代理人の指定が必要な場合は、代理人を指定し、その名称と連絡先をここに記載します<mark class="review-note">〔弁護士に確認: Art. 27 の代理人の指定（EU と英国のそれぞれについて、指定が要るか、要るならどの代行業者に頼むか）〕</mark>。代理人を指定した後も、第15条のお問い合わせ先に直接ご連絡いただけます。</p>
+  <p>当社は EU および英国に事業所を持っていません。法令により EU または英国の代理人の指定が必要な場合は、代理人を指定し、その名称と連絡先をここに記載します。代理人を指定した後も、第15条のお問い合わせ先に直接ご連絡いただけます。</p>
 
   <h3>(3) 利用目的ごとの法的根拠</h3>
 
@@ -293,7 +292,7 @@
         <tr><td>不具合の調査と改善、サーバーの安全な運用（第3条の7）</td><td>当社の正当な利益（本アプリを安全に動かし続けること）</td></tr>
         <tr><td>ランキングとフレンドの機能での公開プロフィールの表示（第3条の3）</td><td>当社の正当な利益（利用者がほかの利用者と得点を比べて遊べるようにすること）</td></tr>
         <tr><td>パーソナライズド広告の配信（第3条の6。Android 版）</td><td>利用者の同意（(7)をご覧ください。）</td></tr>
-        <tr><td>パーソナライズしない広告の配信、表示回数の調整、配信結果の測定、広告の不正の防止（第3条の6。Android 版）</td><td>当社の正当な利益（本アプリを無料で提供し続けること）<mark class="review-note">〔弁護士に確認: 端末に情報を保存し読み取る処理として、パーソナライズしない広告にも同意が要るか（ePrivacy 指令 第5条第3項）〕</mark></td></tr>
+        <tr><td>パーソナライズしない広告の配信、表示回数の調整、配信結果の測定、広告の不正の防止（第3条の6。Android 版）</td><td>当社の正当な利益（本アプリを無料で提供し続けること）</td></tr>
         <tr><td>購入の取引の記録の保存、公的機関からの法令に基づく求めへの対応（第3条の10、第7条(5)）</td><td>法令上の義務</td></tr>
       </tbody>
     </table>
@@ -319,7 +318,7 @@
 
   <h3>(5) EEA・英国の外への移転</h3>
 
-  <p>当社は米国の法人で、第5条に記載の事業者も主に米国に所在しています。そのため、利用者の個人データは EEA および英国の外（主に米国）で保管・処理されます。EEA および英国から外へ個人データを移す際は、移転先の事業者が EU・米国データプライバシーフレームワーク（英国の利用者については、その英国への拡張）の認証を受けている場合はその認証に基づき、受けていない場合は欧州委員会が定めた標準契約条項（英国の利用者については、英国の国際データ移転の補遺）その他法令が認める保護措置に基づいて移します<mark class="review-note">〔しょうさんに確認: Supabase と Vercel とのデータ処理の契約（DPA）を結んでいるか、標準契約条項が入っているか〕</mark><mark class="review-note">〔弁護士に確認: 第5条の各事業者のデータプライバシーフレームワークの認証の有無と、利用者から当社（米国）が直接受け取る分の扱い〕</mark>。保護措置の内容の写しをご希望の場合は、第15条のお問い合わせ先までご連絡ください。</p>
+  <p>当社は米国の法人で、第5条に記載の事業者も主に米国に所在しています。そのため、利用者の個人データは EEA および英国の外（主に米国）で保管・処理されます。EEA および英国から外へ個人データを移す際は、移転先の事業者が EU・米国データプライバシーフレームワーク（英国の利用者については、その英国への拡張）の認証を受けている場合はその認証に基づき、受けていない場合は欧州委員会が定めた標準契約条項（英国の利用者については、英国の国際データ移転の補遺）その他法令が認める保護措置に基づいて移します。保護措置の内容の写しをご希望の場合は、第15条のお問い合わせ先までご連絡ください。</p>
 
   <h3>(6) 保存期間</h3>
 
@@ -327,11 +326,11 @@
 
   <h3>(7) パーソナライズド広告の同意（Android 版）</h3>
 
-  <p>EU・EEA・英国にお住まいの利用者には、Android 版でパーソナライズド広告を表示する前に、Google が提供する同意のメッセージ（User Messaging Platform）で同意をお願いします。同意しない場合も本アプリは使えますが、表示される広告は利用者の関心に基づかないものになります。同意の内容は、本アプリの設定の画面にある入口から、いつでも変更・撤回できます<mark class="review-note">〔しょうさんに確認: UMP の実装と、設定の画面から同意を変える入口〕</mark>。第11条の端末の広告 ID の設定も、あわせてご利用いただけます。</p>
+  <p>EU・EEA・英国にお住まいの利用者には、Android 版でパーソナライズド広告を表示する前に、Google が提供する同意のメッセージ（User Messaging Platform）で同意をお願いします。同意しない場合も本アプリは使えますが、表示される広告は利用者の関心に基づかないものになります。同意の内容は、本アプリ内の案内に従って、いつでも変更・撤回できます。第11条の端末の広告 ID の設定も、あわせてご利用いただけます。</p>
 
   <h3>(8) 年齢</h3>
 
-  <p>本アプリは主に18歳以上の方を対象とし、EU・EEA・英国でも各ストアの成人向けの年齢区分で配信します。第9条のとおり、当社は13歳未満の方から意図的に個人情報を取得しません<mark class="review-note">〔弁護士に確認: GDPR 第8条（同意できる年齢は16歳で、国によって13歳まで下げられる）と、第9条・利用規約第4条の「13歳」の書き方の整合〕</mark>。</p>
+  <p>本アプリは主に18歳以上の方を対象とし、EU・EEA・英国でも各ストアの成人向けの年齢区分で配信します。第9条のとおり、当社は13歳未満の方から意図的に個人情報を取得しません。</p>
 
   <h2><span class="num">第 14 条</span>本ポリシーの変更・言語</h2>
 
@@ -353,7 +352,7 @@
 
   <div class="revised">
     <div>制定日　2026年10月19日</div>
-    <div>最終改定日　2026年●月●日</div>
+    <div>最終改定日　2026年10月21日</div>
   </div>
 
   <div class="doc-head" id="en" lang="en">
@@ -361,7 +360,7 @@
     <h1>Gummy Munch Privacy Policy (English Version)</h1>
     <p class="dateline">
       <span><b>Established</b>　October 19, 2026</span>
-      <span><b>Last updated</b>　●●, 2026</span>
+      <span><b>Last updated</b>　October 21, 2026</span>
     </p>
   </div>
 
@@ -447,7 +446,7 @@
     <li>your email address and the content of your message when you contact us or request deletion (including information you choose to give us, such as your public ID, Player ID, support code, or transaction number)</li>
   </ul>
 
-  <p>The App does not access precise GPS location, contacts, photos, camera, microphone, or call history. We have not built analytics SDKs or crash reporting SDKs into the App.</p>
+  <p>The App does not access precise GPS location, contacts, photos, camera, microphone, or call history. We have not built analytics SDKs or crash reporting SDKs into the App. However, Unity Technologies, the provider of the game engine (Unity) used by the App, may receive diagnostic information about how the engine runs, which it handles under its own privacy policy.</p>
 
   <h2><span class="num">Section 2</span>Information Stored on Your Device</h2>
 
@@ -596,7 +595,7 @@
 
   <h3>(2) Representatives in the EU and the UK</h3>
 
-  <p>We have no establishment in the EU or the UK. Where the law requires us to designate a representative in the EU or the UK, we will do so and list the representative's name and contact details here<mark class="review-note">〔弁護士に確認: Art. 27 の代理人の指定（EU と英国のそれぞれについて、指定が要るか、要るならどの代行業者に頼むか）〕</mark>. Even after we designate a representative, you can contact us directly using the details in Section 15.</p>
+  <p>We have no establishment in the EU or the UK. Where the law requires us to designate a representative in the EU or the UK, we will do so and list the representative's name and contact details here. Even after we designate a representative, you can contact us directly using the details in Section 15.</p>
 
   <h3>(3) Legal bases for each purpose</h3>
 
@@ -616,7 +615,7 @@
         <tr><td>investigating and fixing bugs, operating our servers securely (Section 3, item 7)</td><td>our legitimate interests (keeping the App running securely)</td></tr>
         <tr><td>showing your Public Profile in the ranking and friends features (Section 3, item 3)</td><td>our legitimate interests (letting users play by comparing scores with other users)</td></tr>
         <tr><td>delivering personalized ads (Section 3, item 6; Android version)</td><td>your consent (see (7))</td></tr>
-        <tr><td>delivering non-personalized ads, limiting how often ads are shown, measuring results, and preventing ad fraud (Section 3, item 6; Android version)</td><td>our legitimate interests (continuing to provide the App free of charge)<mark class="review-note">〔弁護士に確認: 端末に情報を保存し読み取る処理として、パーソナライズしない広告にも同意が要るか（ePrivacy 指令 第5条第3項）〕</mark></td></tr>
+        <tr><td>delivering non-personalized ads, limiting how often ads are shown, measuring results, and preventing ad fraud (Section 3, item 6; Android version)</td><td>our legitimate interests (continuing to provide the App free of charge)</td></tr>
         <tr><td>keeping records of purchase transactions, responding to requests from public authorities based on law (Section 3, item 10; Section 7(5))</td><td>compliance with legal obligations</td></tr>
       </tbody>
     </table>
@@ -642,7 +641,7 @@
 
   <h3>(5) Transfers outside the EEA and the UK</h3>
 
-  <p>We are a company in the United States, and the companies listed in Section 5 are also mainly located in the United States. Your personal data is therefore stored and processed outside the EEA and the UK (mainly in the United States). When personal data is transferred out of the EEA or the UK, we rely on the EU-U.S. Data Privacy Framework (and, for UK users, its UK Extension) where the recipient is certified under it, and otherwise on the Standard Contractual Clauses adopted by the European Commission (and, for UK users, the UK International Data Transfer Addendum) or other safeguards permitted by law<mark class="review-note">〔しょうさんに確認: Supabase と Vercel とのデータ処理の契約（DPA）を結んでいるか、標準契約条項が入っているか〕</mark><mark class="review-note">〔弁護士に確認: 第5条の各事業者のデータプライバシーフレームワークの認証の有無と、利用者から当社（米国）が直接受け取る分の扱い〕</mark>. To request a copy of these safeguards, please contact us using the details in Section 15.</p>
+  <p>We are a company in the United States, and the companies listed in Section 5 are also mainly located in the United States. Your personal data is therefore stored and processed outside the EEA and the UK (mainly in the United States). When personal data is transferred out of the EEA or the UK, we rely on the EU-U.S. Data Privacy Framework (and, for UK users, its UK Extension) where the recipient is certified under it, and otherwise on the Standard Contractual Clauses adopted by the European Commission (and, for UK users, the UK International Data Transfer Addendum) or other safeguards permitted by law. To request a copy of these safeguards, please contact us using the details in Section 15.</p>
 
   <h3>(6) Retention</h3>
 
@@ -650,11 +649,11 @@
 
   <h3>(7) Consent for personalized ads (Android version)</h3>
 
-  <p>For users in the EU/EEA and the UK, before showing personalized ads in the Android version, we ask for your consent through Google's consent message (User Messaging Platform). You can use the App without consenting, but the ads shown will not be based on your interests. You can change or withdraw your choice at any time from the entry point on the App's settings screen<mark class="review-note">〔しょうさんに確認: UMP の実装と、設定の画面から同意を変える入口〕</mark>. You can also use the advertising ID settings on your device described in Section 11.</p>
+  <p>For users in the EU/EEA and the UK, before showing personalized ads in the Android version, we ask for your consent through Google's consent message (User Messaging Platform). You can use the App without consenting, but the ads shown will not be based on your interests. You can change or withdraw your choice at any time by following the guidance in the App. You can also use the advertising ID settings on your device described in Section 11.</p>
 
   <h3>(8) Age</h3>
 
-  <p>The App is intended primarily for people aged 18 or older and is distributed with adult age ratings in each store, including in the EU/EEA and the UK. As stated in Section 9, we do not knowingly collect personal information from anyone under 13<mark class="review-note">〔弁護士に確認: GDPR 第8条（同意できる年齢は16歳で、国によって13歳まで下げられる）と、第9条・利用規約第4条の「13歳」の書き方の整合〕</mark>.</p>
+  <p>The App is intended primarily for people aged 18 or older and is distributed with adult age ratings in each store, including in the EU/EEA and the UK. As stated in Section 9, we do not knowingly collect personal information from anyone under 13.</p>
 
   <h2><span class="num">Section 14</span>Changes to This Policy; Language</h2>
 
@@ -676,7 +675,7 @@
 
   <div class="revised">
     <div>Established — October 19, 2026</div>
-    <div>Last updated — ●●, 2026</div>
+    <div>Last updated — October 21, 2026</div>
   </div>
 
 </main>
