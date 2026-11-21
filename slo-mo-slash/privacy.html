@@ -35,6 +35,7 @@
     <h1>Slo Mo Slash プライバシーポリシー</h1>
     <p class="dateline">
       <span><b>制定日</b>　2026年10月23日</span>
+      <span><b>最終改定日</b>　2026年11月21日</span>
     </p>
   </div>
 
@@ -51,7 +52,7 @@
   <h3>(1) 広告の配信のために自動的に取得される情報</h3>
   <p>以下の情報は、本アプリに組み込まれた広告配信用のソフトウェア（第4条に記載の SDK）が、広告の配信、表示回数の調整、配信結果の測定および不正の防止のために取得するものです。</p>
   <ul>
-    <li>広告識別子（Android の広告 ID）</li>
+    <li>広告識別子（Android の広告 ID、iOS の IDFA。iOS では利用者が第6条の許可をした場合に限ります。）</li>
     <li>端末の種類、OS の種類とバージョン、言語設定、画面解像度</li>
     <li>IP アドレス、およびそこから推定される国・地域（住所を特定できる精度の位置情報は取得しません）</li>
     <li>広告の表示回数・クリック等、広告に関する情報</li>
@@ -61,7 +62,7 @@
   <p>当社は、利用状況の分析だけを目的とするソフトウェア（アナリティクス SDK）や、異常終了の記録だけを目的とするソフトウェア（クラッシュレポート SDK）は本アプリに組み込んでいません。ただし、購入の処理に使う Unity In-App Purchasing（第4条に記載）は、購入を正しく処理し安定して動かすため、当社の委託を受けて、端末とアプリの識別子、おおよその国・地域、購入の履歴、異常終了の記録および診断の情報を取得します。</p>
 
   <h3>(2) 購入に関する情報</h3>
-  <p>本アプリで有料の商品（広告の非表示など）を購入された場合、購入の手続きは Google Play が行い、当社はクレジットカード番号等の決済の情報を取得しません。当社が受け取るのは、購入を確認するための情報（購入の識別子、商品、購入の日時および状態）だけです。</p>
+  <p>本アプリで有料の商品（広告の非表示など）を購入された場合、購入の手続きは、iOS 版では App Store、Android 版では Google Play が行い、当社はクレジットカード番号等の決済の情報や、Apple ID・Google アカウントのパスワードを取得しません。当社が受け取るのは、購入を確認するための情報（購入の識別子、商品、購入の日時および状態）だけです。</p>
 
   <h3>(3) 利用者が任意で提供する情報</h3>
   <ul>
@@ -76,7 +77,7 @@
     <li>ゲームの進行状況（クリアした面、選んだキャラクターと武器、設定の内容など）</li>
     <li>スコアの記録</li>
   </ul>
-  <p>本アプリにはオンラインランキングおよびクラウドセーブの機能がないため、これらの情報が他の利用者に共有されることはありません。本アプリをアンインストールすると、これらの情報は削除され、復元することはできません。購入した商品は、Google Play の購入の記録から復元できます。</p>
+  <p>本アプリにはオンラインランキングおよびクラウドセーブの機能がないため、これらの情報が他の利用者に共有されることはありません。本アプリをアンインストールすると、これらの情報は削除され、復元することはできません。購入した商品は、購入に使ったストア（App Store または Google Play）の購入の記録から復元できます。</p>
 
   <h2><span class="num">第 3 条</span>利用目的</h2>
   <ol>
@@ -96,7 +97,8 @@
         <tr><td class="svc">Google AdMob</td><td>Google LLC</td><td>広告の配信</td></tr>
         <tr><td class="svc">Unity Ads</td><td>Unity Technologies</td><td>広告の配信（AdMob を通じた配信）</td></tr>
         <tr><td class="svc">Unity In-App Purchasing</td><td>Unity Technologies</td><td>購入の処理と確認、購入に関する不具合の調査</td></tr>
-        <tr><td class="svc">Google Play 請求サービス</td><td>Google LLC</td><td>購入の決済と確認</td></tr>
+        <tr><td class="svc">Google Play 請求サービス</td><td>Google LLC</td><td>購入の決済と確認（Android 版）</td></tr>
+        <tr><td class="svc">App Store のアプリ内課金</td><td>Apple Inc.</td><td>購入の決済と確認（iOS 版）</td></tr>
       </tbody>
     </table>
   </div>
@@ -109,6 +111,8 @@
       <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
     <li>Unity Technologies<br>
       <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></li>
+    <li>Apple Inc.<br>
+      <a href="https://www.apple.com/jp/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/jp/legal/privacy/</a></li>
   </ul>
 
   <h2><span class="num">第 5 条</span>第三者への提供</h2>
@@ -121,7 +125,7 @@
   </ol>
 
   <h2><span class="num">第 6 条</span>広告について</h2>
-  <p>本アプリでは、利用者の興味・関心に応じた広告（パーソナライズド広告）が表示されることがあります。これは広告識別子を用いて行われるもので、端末の「設定」→「Google」→「広告」（端末によって表示が異なります。）から、広告 ID を削除またはリセットできます。この設定を行っても広告の表示自体は続きますが、利用者の関心に基づかない広告になります。</p>
+  <p>本アプリでは、利用者の興味・関心に応じた広告（パーソナライズド広告）が表示されることがあります。これは広告識別子を用いて行われるものです。Android 版では、端末の「設定」→「Google」→「広告」（端末によって表示が異なります。）から、広告 ID を削除またはリセットできます。iOS 版では、ホーム画面に移った後に一度だけ、ほかの会社のアプリやウェブサイトをまたいだ追跡の許可（App Tracking Transparency）をお尋ねします。許可しなくても本アプリは同じように遊べ、その場合、広告識別子（IDFA）は取得されません。この許可は、後から端末の「設定」→「プライバシーとセキュリティ」→「トラッキング」で変更できます。これらの設定を行っても広告の表示自体は続きますが、利用者の関心に基づかない広告になります。</p>
   <p>EU・EEA・英国にお住まいの利用者には、パーソナライズド広告を表示する前に、Google が提供する同意のメッセージ（User Messaging Platform）で同意をお願いします。同意の内容は、本アプリの設定の画面からいつでも変更・撤回できます。</p>
   <p>広告の非表示を購入された場合、利用者が自ら選んで視聴する広告を除き、広告は表示されません。</p>
 
@@ -139,7 +143,7 @@
 
   <h2><span class="num">第 11 条</span>利用者の権利</h2>
   <p>利用者は、当社が保有する自己の情報について、開示・訂正・利用停止・削除を請求することができます。ご請求は末尾のお問い合わせ先までご連絡ください。本人確認を行ったうえで、法令に従い対応いたします。</p>
-  <p>米国の州の法令（カリフォルニア州消費者プライバシー法など）が適用される場合、当社は利用者の個人情報を金銭と引き換えに販売しません。広告のための情報の共有をやめたい場合は、第6条の広告 ID の設定をご利用いただくか、お問い合わせ先までご連絡ください。</p>
+  <p>米国の州の法令（カリフォルニア州消費者プライバシー法など）が適用される場合、当社は利用者の個人情報を金銭と引き換えに販売しません。広告のための情報の共有をやめたい場合は、第6条の設定（Android 版では広告 ID の設定、iOS 版では追跡の許可の設定）をご利用いただくか、お問い合わせ先までご連絡ください。</p>
 
   <h2><span class="num">第 11 条の 2</span>EU・EEA・英国・スイスにお住まいの方へ</h2>
   <p>本条は、欧州連合（EU）、欧州経済領域（EEA）、英国またはスイスにお住まいの利用者に適用されます。本条とほかの条の内容が異なる場合、これらの地域の利用者には本条が優先して適用されます。</p>
@@ -190,6 +194,7 @@
 
   <div class="revised">
     <div>制定日　2026年10月23日</div>
+    <div>最終改定日　2026年11月21日</div>
   </div>
 
   <div class="doc-head" id="en" lang="en">
@@ -197,6 +202,7 @@
     <h1>Slo Mo Slash Privacy Policy (English Version)</h1>
     <p class="dateline">
       <span><b>Established</b>　October 23, 2026</span>
+      <span><b>Last revised</b>　November 21, 2026</span>
     </p>
   </div>
 
@@ -213,7 +219,7 @@
   <h3>(1) Information collected automatically for ad delivery</h3>
   <p>The following information is collected by the advertising software built into the App (the SDKs listed in Section 4) to deliver ads, limit how often they are shown, measure results, and prevent fraud:</p>
   <ul>
-    <li>the advertising identifier (Android advertising ID)</li>
+    <li>the advertising identifier (the Android advertising ID, or the IDFA on iOS, only if you allow it as described in Section 6)</li>
     <li>device type, operating system and version, language setting, and screen resolution</li>
     <li>IP address and the country or region estimated from it (we do not collect location precise enough to identify an address)</li>
     <li>information about ads, such as impressions and clicks</li>
@@ -223,7 +229,7 @@
   <p>We have not built software whose sole purpose is analytics (analytics SDKs) or crash reporting (crash reporting SDKs) into the App. However, Unity In-App Purchasing, which we use to process purchases (listed in Section 4), collects device and app identifiers, your approximate country or region, purchase history, crash logs, and diagnostic information on our behalf so that purchases are processed correctly and run reliably.</p>
 
   <h3>(2) Purchase information</h3>
-  <p>If you buy a paid product in the App (such as Ads Off), Google Play handles the purchase and we do not collect payment details such as credit card numbers. We receive only the information needed to confirm the purchase (the purchase identifier, the product, and the date, time, and status of the purchase).</p>
+  <p>If you buy a paid product in the App (such as Ads Off), the App Store (iOS version) or Google Play (Android version) handles the purchase, and we do not collect payment details such as credit card numbers, or your Apple ID or Google account password. We receive only the information needed to confirm the purchase (the purchase identifier, the product, and the date, time, and status of the purchase).</p>
 
   <h3>(3) Information you choose to provide</h3>
   <ul>
@@ -238,7 +244,7 @@
     <li>your game progress (levels cleared, the characters and weapons you chose, settings, and so on)</li>
     <li>score records</li>
   </ul>
-  <p>The App has no online ranking or cloud save feature, so this information is not shared with other users. If you uninstall the App, this information is deleted and cannot be restored. Products you purchased can be restored from your Google Play purchase records.</p>
+  <p>The App has no online ranking or cloud save feature, so this information is not shared with other users. If you uninstall the App, this information is deleted and cannot be restored. Products you purchased can be restored from the purchase records of the store you used (the App Store or Google Play).</p>
 
   <h2><span class="num">Section 3</span>How We Use Information</h2>
   <ol>
@@ -258,7 +264,8 @@
         <tr><td class="svc">Google AdMob</td><td>Google LLC</td><td>ad delivery</td></tr>
         <tr><td class="svc">Unity Ads</td><td>Unity Technologies</td><td>ad delivery (through AdMob)</td></tr>
         <tr><td class="svc">Unity In-App Purchasing</td><td>Unity Technologies</td><td>processing and confirming purchases, and investigating purchase-related issues</td></tr>
-        <tr><td class="svc">Google Play Billing</td><td>Google LLC</td><td>payment and confirmation of purchases</td></tr>
+        <tr><td class="svc">Google Play Billing</td><td>Google LLC</td><td>payment and confirmation of purchases (Android version)</td></tr>
+        <tr><td class="svc">App Store In-App Purchase</td><td>Apple Inc.</td><td>payment and confirmation of purchases (iOS version)</td></tr>
       </tbody>
     </table>
   </div>
@@ -271,6 +278,8 @@
       <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a></li>
     <li>Unity Technologies<br>
       <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">https://unity.com/legal/game-player-and-app-user-privacy-policy</a></li>
+    <li>Apple Inc.<br>
+      <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a></li>
   </ul>
 
   <h2><span class="num">Section 5</span>Disclosure to Third Parties</h2>
@@ -283,7 +292,7 @@
   </ol>
 
   <h2><span class="num">Section 6</span>Advertising</h2>
-  <p>In the App, ads based on your interests (personalized ads) may be shown. These use the advertising identifier, which you can delete or reset in your device's Settings &gt; Google &gt; Ads (the wording may differ by device). Ads will still be shown after you change this setting, but they will not be based on your interests.</p>
+  <p>In the App, ads based on your interests (personalized ads) may be shown. These use the advertising identifier. On Android, you can delete or reset the advertising ID in your device's Settings &gt; Google &gt; Ads (the wording may differ by device). On iOS, after you reach the home screen we ask once for your permission to track you across apps and websites owned by other companies (App Tracking Transparency). The App works the same if you decline, and in that case the advertising identifier (IDFA) is not collected. You can change this permission later in your device's Settings &gt; Privacy &amp; Security &gt; Tracking. Ads will still be shown after you change these settings, but they will not be based on your interests.</p>
   <p>For users in the EU/EEA and the UK, before showing personalized ads, we ask for your consent through Google's consent message (User Messaging Platform). You can change or withdraw your choice at any time from the App's settings screen.</p>
   <p>If you purchase Ads Off, no ads are shown except ads that you choose to watch yourself.</p>
 
@@ -301,7 +310,7 @@
 
   <h2><span class="num">Section 11</span>Your Rights</h2>
   <p>You may request disclosure, correction, suspension of use, and deletion of information about you that we hold. Please contact us using the details at the end of this Policy. After confirming your identity, we will respond in accordance with applicable law.</p>
-  <p>If the laws of a U.S. state (such as the California Consumer Privacy Act) apply, we do not sell your personal information for money. If you want to stop the sharing of information for advertising, you can use the advertising ID setting described in Section 6, or contact us using the details at the end of this Policy.</p>
+  <p>If the laws of a U.S. state (such as the California Consumer Privacy Act) apply, we do not sell your personal information for money. If you want to stop the sharing of information for advertising, you can use the settings described in Section 6 (the advertising ID setting on Android, or the tracking permission on iOS), or contact us using the details at the end of this Policy.</p>
 
   <h2><span class="num">Section 11-2</span>For Users in the EU/EEA, the UK, and Switzerland</h2>
   <p>This Section applies to users who live in the European Union (EU), the European Economic Area (EEA), the United Kingdom (UK), or Switzerland. If this Section differs from other Sections, this Section prevails for users in those regions.</p>
@@ -352,6 +361,7 @@
 
   <div class="revised">
     <div>Established — October 23, 2026</div>
+    <div>Last revised — November 21, 2026</div>
   </div>
 
 </main>
