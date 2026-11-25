@@ -42,10 +42,10 @@
 
   <p class="lang-jump"><a href="#en">English version is below</a></p>
 
-  <p class="lede">Sherpal, LLC（以下「当社」といいます。）が提供するゲーム「Slow Mo Slash : 刻守」（海外での名称は「Slow Mo Slash : TOKIMORI」、旧称は「Slo Mo Slash」。以下「本アプリ」といいます。）には、利用者登録やログインの機能がありません。当社は、利用者のゲームの記録を当社のサーバーに保存していません。本アプリに関する情報は、利用者の端末の中と、本アプリに組み込んだソフトウェア（SDK）の提供者のもとにあります（<a href="privacy.html">プライバシーポリシー</a>第4条）。それぞれの消し方は次のとおりです。</p>
+  <p class="lede">Sherpal, LLC（以下「当社」といいます。）が提供するゲーム「Slow Mo Slash : 刻守」（海外での名称は「Slow Mo Slash : TOKIMORI」、旧称は「Slo Mo Slash」。以下「本アプリ」といいます。）には、利用者登録やログインの機能がありません。当社は、利用者のゲームの記録を当社のサーバーに保存していません。本アプリに関する情報は、利用者の端末の中と、本アプリに組み込んだソフトウェア（SDK）の提供者のもとにあります。購入をした場合は、購入を確認する当社のサーバーにも購入の記録があります（<a href="privacy.html">プライバシーポリシー</a>第1条・第4条）。それぞれの消し方は次のとおりです。</p>
 
   <h2><span class="num">手順 1</span>端末の中のデータを消す</h2>
-  <p>ゲームの進み、設定、購入の確認の記録は、端末の中だけに保存されています。次のどちらかで、すぐに消えます。</p>
+  <p>ゲームの進み、設定、購入の確認の記録は、端末の中に保存されています（当社のサーバーにある購入の記録の消し方は手順 3）。次のどちらかで、すぐに消えます。</p>
   <ul>
     <li>本アプリを端末から削除（アンインストール）する</li>
     <li>端末の［設定］→［アプリ］→［刻守］（日本語以外の端末では［TOKIMORI］）→［ストレージ］→［データを削除］を選ぶ</li>
@@ -55,8 +55,8 @@
   <h2><span class="num">手順 2</span>広告の識別子を消す</h2>
   <p>Android の［設定］→［プライバシー］→［広告］から、広告 ID を削除またはリセットできます。EU・EEA・英国・スイスにお住まいの方は、本アプリの［せってい］→［プライバシーの設定］から、広告の同意をいつでも変えられます。</p>
 
-  <h2><span class="num">手順 3</span>SDK の提供者が持つデータの削除を依頼する</h2>
-  <p>購入の処理に使う Unity In-App Purchasing は、当社の委託を受けて、端末とアプリの識別子、購入の履歴、異常終了の記録および診断の情報を取得しています。これらの削除は、件名を「[Slow Mo Slash : 刻守] データ削除の依頼」として、<a href="mailto:admin@gennai.ai">admin@gennai.ai</a> へメールでご依頼ください。当社から提供者（Unity Technologies）に削除を指示し、対応が済んだらご返信します。</p>
+  <h2><span class="num">手順 3</span>当社のサーバーと SDK の提供者が持つデータの削除を依頼する</h2>
+  <p>本アプリで購入をした場合、購入を確認する当社のサーバー（Vercel と Supabase が当社の委託で運用）に、自動で作られる匿名の識別子と、購入の識別子、商品、購入の日時および状態が記録されます。また、購入の処理に使う Unity In-App Purchasing は、当社の委託を受けて、端末とアプリの識別子、購入の履歴、異常終了の記録および診断の情報を取得しています。これらの削除は、件名を「[Slow Mo Slash : 刻守] データ削除の依頼」として、<a href="mailto:admin@gennai.ai">admin@gennai.ai</a> へメールでご依頼ください。当社のサーバーの記録は当社が削除し、Unity In-App Purchasing の記録は当社から提供者（Unity Technologies）に削除を指示して、対応が済んだらご返信します。</p>
   <p>特定のために、わかる範囲で次の項目をお書きください。</p>
   <ul>
     <li>端末の機種と OS のバージョン</li>
@@ -70,6 +70,7 @@
   <h2>削除されるデータ</h2>
   <ul>
     <li>端末の中のゲームの進み、設定、購入の確認の記録（手順 1）</li>
+    <li>購入を確認する当社のサーバーにある、匿名の識別子と購入の記録（手順 3）</li>
     <li>Unity In-App Purchasing が当社の委託で保存した、端末とアプリの識別子、購入の履歴、異常終了の記録および診断の情報（手順 3）</li>
     <li>Android 版で Google Analytics for Firebase に送られた記録（手順 3。ご依頼の場合は特定できる範囲）</li>
   </ul>
@@ -103,10 +104,10 @@
   <p class="lang-jump"><a href="#top">日本語版へ戻る / Back to the Japanese version</a></p>
 
   <div lang="en">
-  <p class="lede">The game "Slow Mo Slash : TOKIMORI" (titled "Slow Mo Slash : 刻守" in Japan, and formerly "Slo Mo Slash") (the "App"), provided by Sherpal, LLC ("we," "us," or "our"), has no user registration or sign-in. We do not store your game records on our servers. Information about the App is kept on your device and by the providers of the software (SDKs) built into the App (see Section 4 of our <a href="privacy.html">Privacy Policy</a>). Here is how to delete each kind.</p>
+  <p class="lede">The game "Slow Mo Slash : TOKIMORI" (titled "Slow Mo Slash : 刻守" in Japan, and formerly "Slo Mo Slash") (the "App"), provided by Sherpal, LLC ("we," "us," or "our"), has no user registration or sign-in. We do not store your game records on our servers. Information about the App is kept on your device and by the providers of the software (SDKs) built into the App. If you made a purchase, our server that confirms purchases also keeps a record of it (see Sections 1 and 4 of our <a href="privacy.html">Privacy Policy</a>). Here is how to delete each kind.</p>
 
   <h2><span class="num">Step 1</span>Delete data on your device</h2>
-  <p>Your game progress, settings, and purchase confirmation records are stored only on your device. Either of the following deletes them right away:</p>
+  <p>Your game progress, settings, and purchase confirmation records are stored on your device (for purchase records on our server, see Step 3). Either of the following deletes them right away:</p>
   <ul>
     <li>Uninstall the App from your device.</li>
     <li>Go to Settings &gt; Apps &gt; TOKIMORI (刻守 on devices set to Japanese) &gt; Storage &gt; Clear data.</li>
@@ -116,8 +117,8 @@
   <h2><span class="num">Step 2</span>Delete your advertising identifier</h2>
   <p>You can delete or reset your advertising ID in Android Settings &gt; Privacy &gt; Ads. If you live in the EU/EEA, the UK, or Switzerland, you can change your ad consent at any time in the App under SETTINGS &gt; PRIVACY SETTINGS.</p>
 
-  <h2><span class="num">Step 3</span>Ask us to delete data held by SDK providers</h2>
-  <p>Unity In-App Purchasing, which we use to process purchases, collects device and app identifiers, purchase history, crash logs, and diagnostic information on our behalf. To have this data deleted, email <a href="mailto:admin@gennai.ai">admin@gennai.ai</a> with the subject "[Slow Mo Slash : TOKIMORI] Data deletion request." We will instruct the provider (Unity Technologies) to delete it and reply to you once it is done.</p>
+  <h2><span class="num">Step 3</span>Ask us to delete data held on our server and by SDK providers</h2>
+  <p>If you make a purchase in the App, our server that confirms purchases (operated for us by Vercel and Supabase) records an automatically created anonymous identifier, together with the purchase identifier, the product, and the date and status of the purchase. In addition, Unity In-App Purchasing, which we use to process purchases, collects device and app identifiers, purchase history, crash logs, and diagnostic information on our behalf. To have this data deleted, email <a href="mailto:admin@gennai.ai">admin@gennai.ai</a> with the subject "[Slow Mo Slash : TOKIMORI] Data deletion request." We will delete the records on our server, instruct Unity Technologies to delete the Unity In-App Purchasing records, and reply to you once it is done.</p>
   <p>To help us find your data, please include as much of the following as you can:</p>
   <ul>
     <li>your device model and OS version;</li>
@@ -131,6 +132,7 @@
   <h2>Data that is deleted</h2>
   <ul>
     <li>game progress, settings, and purchase confirmation records on your device (Step 1);</li>
+    <li>the anonymous identifier and purchase records on our server that confirms purchases (Step 3);</li>
     <li>device and app identifiers, purchase history, crash logs, and diagnostic information stored by Unity In-App Purchasing on our behalf (Step 3);</li>
     <li>records sent to Google Analytics for Firebase in the Android version (Step 3; on request, to the extent we can identify them).</li>
   </ul>
